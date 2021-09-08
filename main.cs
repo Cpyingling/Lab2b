@@ -5,10 +5,10 @@ using System;
 class Program {
   public static void Main (string[] args) {
     //ask for 2 numbers and save to num1 and num2
-    Console.WriteLine ("Enter a number.");
-    double num1 = Convert.ToDouble(Console.ReadLine());
-    Console.WriteLine ("Enter another number.");
-    double num2 = Convert.ToDouble(Console.ReadLine());
+    Console.Write ("Enter a number: ");
+    int num1 = Convert.ToInt32(Console.ReadLine());
+    Console.Write ("Enter another number: ");
+    int num2 = Convert.ToInt32(Console.ReadLine());
     //Add numbers and save to sum
     double sum = num1 + num2;
     //display sum
@@ -21,14 +21,8 @@ class Program {
     double product = num1 * num2;
     //display product
     Console.WriteLine ("Product = " +product);
-
-    /*
-    Questions on quotient part
-    */
     //divide num 1 by 2 and save as quotient
-    double quotient = num1 / num2; //displays 1.875 
-    //double quotient = Convert.ToInt32(num1 / num2); //displays 2
-    
+    double quotient = Convert.ToInt32(num1 / num2); //displays 2
     //display quotient
     Console.WriteLine ("Quotient = " +quotient);
     //find remainder using % on num 1 & 2 and save as remainder
